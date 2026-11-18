@@ -1,26 +1,35 @@
-# 📄 Hoja de Vida en Formato ATS (Applicant Tracking System)
+# 📄 Hoja de Vida en Formato ATS &bull; Juan Diego Rodríguez Yanquen
 
-Plantilla y versión web de currículum profesional diseñada específicamente para cumplir con los estándares de lectura de los sistemas de seguimiento de candidatos (**ATS - Applicant Tracking Systems**), utilizados por plataformas como LinkedIn, Indeed, Workday, Lever y Greenhouse.
+Currículum profesional desarrollado en **HTML5 semántico y CSS3**, optimizado específicamente para cumplir con los estándares técnicos y de lectura de los sistemas de seguimiento de candidatos (**ATS - Applicant Tracking Systems**), como Workday, Greenhouse, Lever, Taleo y los analizadores automáticos de LinkedIn e Indeed.
 
----
-
-## 🎯 ¿Por qué el formato ATS?
-
-Los sistemas ATS procesan y filtran automáticamente los currículums antes de que lleguen a manos de un reclutador humano. Las plantillas con diseños en múltiples columnas, tablas, gráficos complejos o imágenes suelen romper el analizador (*parser*), provocando el descarte automático de la postulación.
-
-Esta versión resuelve ese problema mediante:
-- **Estructura en una sola columna:** Flujo de lectura lineal y predecible.
-- **HTML5 semántico:** Uso estricto de etiquetas estándar (`<header>`, `<main>`, `<section>`, `<article>`, `<address>`, `<ul>`, `<li>`).
-- **Sin elementos que confundan al bot:** Libre de imágenes decorativas o capas superpuestas.
-- **Palabras clave (*Keywords*):** Habilidades y tecnologías organizadas por categorías estándar de la industria tech.
-- **Exportación perfecta a 1 página:** Reglas `@media print` optimizadas para generar un PDF de una sola hoja sin líneas huérfanas.
+[![HTML5](https://img.shields.io/badge/HTML5-Semántico_ATS-E34F26?style=flat-square&logo=html5&logoColor=white)](https://developer.mozilla.org/es/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-Print_Engineering-1572B6?style=flat-square&logo=css3&logoColor=white)](https://developer.mozilla.org/es/docs/Web/CSS)
+[![ATS Compliant](https://img.shields.io/badge/ATS-100%25_Compliant-success?style=flat-square)](https://www.jobscan.co/blog/ats-resume/)
+[![Page Size](https://img.shields.io/badge/Output-1_Página_Exacta-blue?style=flat-square)](#)
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## 🎯 Fundamentos Técnicos del Estándar ATS
 
-* **HTML5:** Marcado semántico y accesible.
-* **CSS3:** Tipografía estándar de alta legibilidad (Arial / Helvetica), espaciado armónico y reglas de impresión para PDF.
+Los analizadores de CV automáticos procesan documentos mediante extracción de texto plano y mapeo de entidades de datos. Los diseños convencionales con múltiples columnas, tablas desordenadas, íconos incrustados o fotografías fragmentan el árbol del DOM, provocando la mezcla de información o el descarte automático de la postulación.
+
+Esta implementación resuelve esas fricciones mediante principios técnicos estructurados:
+
+* **Arquitectura Lineal en 1 Columna:** Flujo de lectura continuo (`top-to-bottom`) que garantiza la extracción secuencial de cada sección sin mezclar columnas.
+* **HTML5 Semántico Estricto:** Uso de `<header>`, `<main>`, `<section>`, `<article>`, `<address>`, `<ul>` y `<li>` para definir con claridad la jerarquía entre datos de contacto, resumen, experiencia, educación y habilidades.
+* **Optimización de Palabras Clave (*Keywords*):** Clasificación estandarizada de competencias tecnológicas (Lenguajes, Frontend, Backend, Bases de Datos y Herramientas) alineada a los filtros de búsqueda de reclutadores técnicos.
+* **Tipografía de Compatibilidad Universal:** Uso de fuentes de sistema de alta legibilidad (`Arial`, `Helvetica`, `sans-serif`) que no dependen de recursos web externos para su renderizado.
+* **Ingeniería de Impresión (`@media print`):** Reglas CSS calibradas (`@page`, `break-inside: avoid;`, ajuste de interlineado y paddings) que garantizan que el documento compile en **exactamente 1 página** sin desbordes huérfanos.
+
+---
+
+## 🛠️ Stack y Tecnologías
+
+| Área | Tecnología | Implementación |
+|---|---|---|
+| **Estructura** | HTML5 Semántico | Jerarquización accesible (`<h1>`-`<h3>`, `<address>`, `<article>`) |
+| **Estilos & Layout** | CSS3 Moderno | Flexbox para encabezados de experiencia, reseteo de márgenes |
+| **Exportación** | `@media print` | Compresión armónica para salida limpia a formato PDF en tamaño Carta / A4 |
 
 ---
 
@@ -29,32 +38,19 @@ Esta versión resuelve ese problema mediante:
 ```text
 Hoja de vida (ATS)/
 ├── css/
-│   └── style.css       # Estilos globales y reglas de impresión (@media print)
-├── img/                # Directorio sin elementos gráficos (exclusivo para estándares ATS)
-├── index.html          # Estructura principal del currículum
-└── README.md           # Documentación del proyecto
+│   └── style.css       # Estilos visuales y reglas avanzadas de impresión (@media print)
+├── img/                # Directorio sin elementos gráficos (estricto cumplimiento ATS)
+├── index.html          # Marcado semántico del currículum
+└── README.md           # Documentación técnica del proyecto
 ```
 
 ---
 
-## 🚀 Cómo Visualizar y Exportar a PDF
-
-1. **Abrir en navegador:** Haz doble clic en el archivo `index.html` o usa una extensión como *Live Server* en Visual Studio Code.
-2. **Generar PDF de 1 página:**
-   * Presiona `Ctrl + P` (en Windows) o `Cmd + P` (en Mac).
-   * En **Destino**, selecciona **Guardar como PDF**.
-   * En **Diseño**, selecciona **Vertical**.
-   * En **Tamaño de papel**, selecciona **Carta (Letter)** o **A4**.
-   * En **Márgenes**, selecciona **Predeterminados** o **Ninguno**.
-   * Desmarca la opción *Encabezados y pies de página*.
-   * Haz clic en **Guardar**.
-
----
-
-## 👤 Autor
+## 👤 Contacto y Autor
 
 **Juan Diego Rodríguez Yanquen**
 * 📍 Bogotá D.C., Colombia
 * ✉️ [juandrodriguezy057@gmail.com](mailto:juandrodriguezy057@gmail.com)
+* 💬 WhatsApp: [+57 310 669 0137](https://wa.me/573106690137)
 * 💼 [LinkedIn](https://www.linkedin.com/in/juan-rodriguez-3b2589450)
 * 💻 [GitHub](https://github.com/juandirodriguezy)
