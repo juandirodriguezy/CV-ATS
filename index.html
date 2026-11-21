@@ -11,10 +11,10 @@
         <!-- Información de Contacto / Encabezado -->
         <header id="informacion-personal">
             <h1>Juan Diego Rodríguez Yanquen</h1>
-            <p class="subtitulo">Desarrollador de Software | Full-Stack Developer</p>
+            <p class="subtitulo">Desarrollador de Software | Full-Stack &amp; Mobile (Android)</p>
             <address>
                 <span>Bogotá D.C., Colombia</span> |
-                <span>+57 311 455 8908</span> |
+                <span>+57 310 669 0137</span> |
                 <span><a href="mailto:juandrodriguezy057@gmail.com">juandrodriguezy057@gmail.com</a></span>
                 <br>
                 <span><a href="https://www.linkedin.com/in/juan-rodriguez-3b2589450" target="_blank" rel="noopener noreferrer">LinkedIn: in/juan-rodriguez-3b2589450</a></span> |
@@ -25,26 +25,40 @@
         <!-- Resumen Profesional -->
         <section id="resumen">
             <h2>Resumen Profesional</h2>
-            <p>Estudiante de Tecnología en Desarrollo de Software con sólida preparación en desarrollo web full-stack y gestión de bases de datos relacionales. Experiencia práctica en el diseño e implementación de APIs REST con <strong>Node.js</strong> y <strong>Express</strong>, interfaces reactivas con <strong>React</strong> y administración de bases de datos en <strong>PostgreSQL</strong> y <strong>MySQL</strong>. Manejo de lenguajes como <strong>JavaScript</strong>, <strong>Java</strong> y <strong>Kotlin</strong>, con orientación hacia la arquitectura limpia, seguridad con JWT y resolución eficiente de problemas mediante código escalable.</p>
+            <p>Estudiante de Tecnología en Desarrollo de Software en la Universidad de San Buenaventura con sólida formación en desarrollo web full-stack y aplicaciones móviles nativas en <strong>Android (Kotlin)</strong>. Experiencia práctica en el diseño e implementación de arquitecturas <strong>MVVM</strong>, APIs REST modulares con <strong>Node.js/Express</strong>, interfaces reactivas con <strong>React</strong> y administración de bases de datos relacionales y NoSQL en <strong>PostgreSQL</strong>, <strong>MySQL</strong> y <strong>Cloud Firestore</strong>. Enfoque riguroso en seguridad (JWT, Bcrypt, Security Rules), orquestación de eventos asíncronos y código limpio.</p>
         </section>
 
         <!-- Experiencia Práctica y Proyectos de Desarrollo -->
         <section id="experiencia">
             <h2>Experiencia en Desarrollo de Software</h2>
+            
+            <!-- Proyecto 1: ALIMOP -->
             <article class="experiencia-item">
                 <div class="item-header">
                     <h3>Desarrollador Full-Stack &ndash; Proyecto ALIMOP (Marketplace de Alimentos)</h3>
-                    <span class="fecha">Febrero 2024 &ndash; Actualidad</span>
+                    <span class="fecha">Feb 2024 &ndash; Actualidad</span>
                 </div>
-                <p class="institucion"><em>Universidad de San Buenaventura | Proyecto Integrador</em></p>
+                <p class="institucion"><em>Universidad de San Buenaventura | Web Full-Stack &bull; React, Node.js, PostgreSQL</em></p>
                 <ul>
-                    <li>Arquitectura e implementación completa de una plataforma web para conectar proveedores de alimentos con clientes finales, optimizando la cadena de suministro y la gestión de inventario.</li>
-                    <li>Diseño y desarrollo de una API RESTful modular con <strong>Node.js</strong> y <strong>Express</strong>, implementando más de 11 endpoints protegidos para autenticación, control de stock y pedidos.</li>
-                    <li>Diseño de base de datos relacional en <strong>PostgreSQL</strong>, garantizando integridad referencial y prevención de inyecciones SQL mediante consultas parametrizadas (<code>pg pool</code>).</li>
-                    <li>Implementación de seguridad y autenticación mediante <strong>JSON Web Tokens (JWT)</strong> y encriptación de contraseñas con <strong>Bcrypt</strong>.</li>
-                    <li>Integración de carga multimedia en la nube conectando <strong>Multer</strong> con el CDN de <strong>ImageKit</strong>.</li>
-                    <li>Construcción de la interfaz de usuario con <strong>React 18</strong>, <strong>Vite</strong>, React Router DOM 6 y Bootstrap 5, incorporando carrito de compras interactivo y panel administrativo para proveedores.</li>
-                    <li>Estructuración de pruebas automatizadas con <strong>Jest</strong> y <strong>Supertest</strong> para validar la confiabilidad de los servicios backend.</li>
+                    <li>Diseño e implementación de plataforma web marketplace B2B/B2C para conectar proveedores de alimentos con clientes finales, optimizando la cadena de suministro y la gestión de inventario.</li>
+                    <li>Desarrollo de API RESTful modular con <strong>Node.js</strong> y <strong>Express</strong> (11+ endpoints) con control de sesiones seguras mediante <strong>JWT</strong> y <strong>Bcrypt</strong>.</li>
+                    <li>Modelado de base de datos relacional en <strong>PostgreSQL</strong> con connection pooling parametrizado (<code>pg pool</code>) para prevenir inyecciones SQL y garantizar integridad referencial.</li>
+                    <li>Construcción de SPA reactiva con <strong>React 18</strong>, <strong>Vite</strong> y Bootstrap 5; integración multimedia con <strong>Multer</strong> y <strong>ImageKit CDN</strong>; pruebas con <strong>Jest</strong> y <strong>Supertest</strong>.</li>
+                </ul>
+            </article>
+
+            <!-- Proyecto 2: GymSync -->
+            <article class="experiencia-item" style="margin-top: 8px;">
+                <div class="item-header">
+                    <h3>Desarrollador Móvil Android &ndash; Proyecto GymSync (Gestión de Gimnasios)</h3>
+                    <span class="fecha">2024 &ndash; Actualidad</span>
+                </div>
+                <p class="institucion"><em>Universidad de San Buenaventura | Android Nativo &bull; Kotlin, Firebase, n8n, Make.com</em></p>
+                <ul>
+                    <li>Desarrollo de aplicación nativa en <strong>Kotlin</strong> bajo arquitectura <strong>MVVM</strong> con <code>LiveData</code> y <code>SharedFlow</code>, consumiendo servicios externos mediante <strong>Retrofit 2</strong> y <strong>OkHttp</strong>.</li>
+                    <li>Sincronización en tiempo real con <strong>Cloud Firestore</strong> (listeners reactivos) y <strong>Firebase Auth</strong> con verificación forzada de correo y reglas de seguridad con roles (RBAC: Cliente / Admin).</li>
+                    <li>Orquestación de eventos asíncrona mediante <strong>n8n</strong> (Docker) y <strong>Make.com</strong> para procesamiento automático de reservas y notificaciones transaccionales vía Gmail API.</li>
+                    <li>Módulo de Administrador con gestión de catálogo (CRUD y cancelación en cascada), asistencias atómicas con <code>WriteBatch</code>, interfaz Edge-to-Edge y notificaciones nativas push (Android 13+).</li>
                 </ul>
             </article>
         </section>
@@ -65,11 +79,12 @@
         <section id="habilidades">
             <h2>Habilidades Técnicas</h2>
             <ul class="skills-lista">
-                <li><strong>Lenguajes:</strong> JavaScript (ES6+), Java, Kotlin, SQL (PostgreSQL, MySQL), HTML5, CSS3.</li>
-                <li><strong>Frontend:</strong> React 18, Vite, React Router DOM, Bootstrap 5, Responsive Design, CSS Grid, Flexbox.</li>
-                <li><strong>Backend &amp; APIs:</strong> Node.js, Express.js, REST APIs, JSON Web Tokens (JWT), Bcrypt, Multer.</li>
-                <li><strong>Bases de Datos:</strong> PostgreSQL, MySQL (Modelado relacional, consultas parametrizadas, triggers y constraints).</li>
-                <li><strong>Herramientas &amp; Testing:</strong> Git, GitHub, Postman, Jest, Supertest, DBeaver, VS Code.</li>
+                <li><strong>Lenguajes:</strong> Kotlin, Java, JavaScript (ES6+), SQL (PostgreSQL, MySQL), HTML5, CSS3.</li>
+                <li><strong>Móvil &amp; Android:</strong> Android SDK, MVVM, Retrofit 2, OkHttp, LiveData, SharedFlow, Jetpack Components, Notificaciones nativas.</li>
+                <li><strong>Frontend &amp; Web:</strong> React 18, Vite, React Router DOM, Bootstrap 5, Responsive Design, CSS Grid, Flexbox.</li>
+                <li><strong>Backend &amp; Cloud:</strong> Node.js, Express.js, Firebase (Cloud Firestore, Auth, Security Rules), REST APIs, JWT, Bcrypt, n8n, Make.com.</li>
+                <li><strong>Bases de Datos:</strong> PostgreSQL, MySQL, Cloud Firestore (Modelado relacional y NoSQL, consultas parametrizadas, batch writes).</li>
+                <li><strong>Herramientas &amp; Testing:</strong> Git, GitHub, Postman, Jest, Supertest, DBeaver, Android Studio, VS Code.</li>
             </ul>
         </section>
 
